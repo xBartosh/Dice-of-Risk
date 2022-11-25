@@ -1,0 +1,54 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+
+  body,html{
+    background-color: lightgray;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin: auto;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 500px;
+    border-radius: 30px;
+    border: 2px solid black;
+
+}
+
+header{
+    text-align: center;
+    color: ghostwhite;
+    padding-top: 4px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.menu-button{
+    width: 300px;
+    height: 60px;
+    background-color: ghostwhite;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.menu-button:hover{
+    cursor: pointer;
+}
+

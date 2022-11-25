@@ -1,0 +1,78 @@
+.game-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 18px;
+    gap: 30px;
+}
+
+#rounds, #players {
+    max-width: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#save {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 16px;
+}
+
+#save:hover{
+    cursor: pointer;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.player, .play, .reset{
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+.play, .reset {
+    width: 100px;
+}
+
+.play:hover, .reset:hover{
+    cursor: pointer;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.players-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}

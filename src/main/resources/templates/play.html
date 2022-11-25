@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Play - Dice of Risk</title>
+    <link href="../static/styles/styles.css" th:href="@{/styles/styles.css}" rel="stylesheet">
+    <link href="../static/styles/play.css" th:href="@{/styles/play.css}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="round-info">
+            <span th:text="|Round 1/${rounds}|">Round 1/3</span>
+        </div>
+        <div class="game-box">
+            <div class="lose-header">
+                <span>Losing number</span>
+                <div class="lose-number"></div>
+                <button id="losing">Roll losing number</button>
+            </div>
+            <div class="rolls-in-round">
+                <span>Rolls in round</span>
+                <span class="rolls">1/10</span>
+            </div>
+            <div class="roll-header">
+                <span>Rolled number</span>
+                <div class="roll-number"></div>
+                <button id="roll">Roll the dice</button>
+            </div>
+        </div>
+        <div class="players-boxes" th:remove="all-but-first" th:value="${players.size()}">
+            <div class="player-box" th:each="player: ${players}">
+                <span th:text="${player}" id="name" class="name">Bartek</span>
+                <span class="points" id="points">0</span>
+                <button class="out" id="out">I'm out</button>
+            </div>
+            <div class="player-box">
+                <span>Jula</span>
+                <span class="points">0</span>
+                <button class="out">I'm out</button>
+            </div>
+            <div class="player-box">
+                <span>Kinga</span>
+                <span class="points">0</span>
+                <button class="out">I'm out</button>
+            </div>
+            <div class="player-box">
+                <span>Pawel</span>
+                <span class="points">0</span>
+                <button class="out">I'm out</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+<script src="../static/scripts/play.js" th:src="@{/scripts/play.js}" ></script>
+</body>
+</html>

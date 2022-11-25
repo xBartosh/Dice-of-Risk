@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice of Risk - game settings</title>
+    <link href="../static/styles/styles.css" th:href="@{/styles/styles.css}" rel="stylesheet">
+    <link href="../static/styles/game-settings.css" th:href="@{/styles/game-settings.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="game-settings">
+        <form id="form" action="/play" method="get">
+            <div>
+                <label for="rounds">Number of rounds:</label>
+                <input type="number" min="1" max="5" id="rounds" name="rounds">
+            </div>
+            <div>
+                <label for="players">Number of players:</label>
+                <input type="number" min="2" max="4" id="players" name="player">
+            </div>
+            <div>
+                <button id="save" type="button">SAVE</button>
+            </div>
+            <div class="players"></div>
+            <div class="players-button"></div>
+        </form>
+
+    </div>
+</div>
+<script src="../static/scripts/game-settings.js" th:src="@{/scripts/game-settings.js}"></script>
+</body>
+</html>

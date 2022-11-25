@@ -1,0 +1,103 @@
+.game-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px 20px;
+}
+
+.lose-header, .roll-header, .rolls-in-round {
+    text-align: center;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.rolls-in-round {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    gap: 10px;
+}
+
+
+.rolls {
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: lightgoldenrodyellow;
+}
+
+.lose-number, .roll-number {
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    line-height: 60px;
+    font-size: 40px;
+    background-color: lightgoldenrodyellow;
+}
+
+.round-info {
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 30px;
+    border: 1px solid black;
+    max-width: 200px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+#roll, #losing {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+#roll:hover,#losing:hover {
+    cursor: pointer;
+}
+
+.players-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.player-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 150px;
+    width: 120px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    background-color: lightgoldenrodyellow;
+}
+
+.out {
+    width: 60px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.out:hover {
+    cursor: pointer;
+}
+
+.points {
+    font-size: 60px;
+    color: #3c4cb2;
+}
