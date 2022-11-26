@@ -101,3 +101,8 @@
     font-size: 60px;
     color: #3c4cb2;
 }
+
+.result-header {
+    text-align: center;
+    font-size: 30px;
+}

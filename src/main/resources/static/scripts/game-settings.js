@@ -16,14 +16,14 @@ message.className = "message";
 saveButton.addEventListener("click", addPlayers)
 resetButton.addEventListener("click", resetToDefault);
 
-function createButton(name){
+function createButton(name) {
     let button = document.createElement("button");
     button.innerHTML = name.toUpperCase();
     button.className = name;
     return button;
 }
 
-function resetToDefault(){
+function resetToDefault() {
     saveButton.style.visibility = "visible";
     players.readOnly = false;
     rounds.readOnly = false;
@@ -35,7 +35,7 @@ function addPlayers() {
     let noOfPlayers = players.value;
     let noOfRounds = rounds.value;
 
-    if (noOfPlayers >= 2 && noOfRounds >= 1) {
+    if (noOfPlayers >= 2 && noOfPlayers <= 4 && noOfRounds >= 1 && noOfRounds <= 5) {
         for (let i = 0; i < noOfPlayers; i++) {
             let player = createPlayerInput();
             document.getElementsByClassName("players")[0].appendChild(player);
@@ -54,7 +54,7 @@ function addPlayers() {
 
 }
 
-function createPlayerInput(){
+function createPlayerInput() {
     let player = document.createElement("input");
     player.type = "text";
     player.value = "";
